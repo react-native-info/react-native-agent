@@ -1,6 +1,6 @@
 {
   "name": "react-native-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "mcp implementation",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
