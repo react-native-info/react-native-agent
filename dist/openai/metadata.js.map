@@ -1,0 +1,1 @@
+{"version":3,"file":"metadata.js","sourceRoot":"","sources":["../../src/openai/metadata.ts"],"names":[],"mappings":"AACA,uCAAuC;AAEvC,MAAM,CAAC,MAAM,QAAQ,GAAG;IACtB,MAAM,EAAE,4BAA4B;IACpC,SAAS,EAAE,OAAO;IAClB,UAAU,EAAE;QACV,4BAA4B,EAAE,OAAO;QACrC,QAAQ,EAAE,SAAS;KACpB;CACF,CAAC;AAEF,eAAe,QAAQ,CAAC"}

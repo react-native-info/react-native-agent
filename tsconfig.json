@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "target": "ESNext",
+    "lib": [
+      "ES2018"
+    ],
+    "module": "ESNext",                                /* Specify what module code is generated. */
+    "moduleResolution": "node",                     /* Specify how TypeScript looks up a file from a given module specifier. */
+    "noUncheckedSideEffectImports": true,             /* Check side effect imports. */
+    "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "exclude": [
+    "dist/**",
+    "test/**"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "react-native-get-random-values",
+  "version": "2.0.0",
+  "license": "MIT",
+  "repository": "LinusU/react-native-get-random-values",
+  "dependencies": {
+    "fast-base64-decode": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.81"
+  },
+  "keywords": [
+    "Crypto.getRandomValues",
+    "crypto",
+    "get-random-values",
+    "getRandomValues",
+    "polyfill",
+    "react-native"
+  ],
+  "codegenConfig": {
+    "name": "RNGetRandomValuesSpec",
+    "type": "modules",
+    "jsSrcsDir": "spec",
+    "android": {
+      "javaPackageName": "org.linusu"
+    }
+  }
+}
