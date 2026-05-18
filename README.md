@@ -9,6 +9,11 @@ Built with ❤️ by [reactnative.info](https://reactnative.info)
 > [!NOTE]
 > Check out the [OpenAI Agents SDK)](https://github.com/openai/openai-agents-js).
 
+> [!NOTE]
+> Wondering how the SDK works in action? Check out: [NewsFeed](https://play.google.com/store/apps/details?id=dev.newsfeed).
+
+<img src="https://raw.githubusercontent.com/react-native-info/react-native-agent/main/qr-code.png" alt="NewsFeed" width="200"/>
+
 ## Core concepts
 
 1. [**Agents**](https://openai.github.io/openai-agents-js/guides/agents): LLMs configured with instructions, tools, guardrails, and handoffs
@@ -20,7 +25,7 @@ Built with ❤️ by [reactnative.info](https://reactnative.info)
 1. [**Tracing**](https://openai.github.io/openai-agents-js/guides/tracing/): [Under work] Built-in tracking of agent runs, allowing you to view, debug and optimize your workflows
 1. [**Realtime Agents**](https://openai.github.io/openai-agents-js/guides/voice-agents/quickstart/): [Under work] Build powerful voice agents with full features
 
-Explore the [`examples/(TODO)`](TODO) directory to see the SDK in action.
+Explore the [`examples/basic`](./examples/basic) directory to see the SDK in action.
 
 ## Get started
 

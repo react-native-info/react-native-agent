@@ -145,7 +145,7 @@ packages/*/dist
 # Python reference implementation (never published with the JS repo)
 openai-agents-python
 
-.DS_Store
+.DS_Store/
 
 bundled/
 
@@ -153,3 +153,4 @@ bundled/
 .dev.vars
 
 .pnpm-store/
+
