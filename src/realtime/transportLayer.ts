@@ -105,8 +105,9 @@ export interface RealtimeTransportLayer extends EventEmitter<RealtimeTransportEv
    * @param audio - The audio buffer to send
    * @param options - Additional options
    * @param options.commit - Whether to commit the audio buffer to the model. If the model does not do turn detection, this can be used to indicate the turn is completed.
+   * @param options.isBase64 - Whether the audio is Base64 encoded
    */
-  sendAudio(audio: ArrayBuffer, options: { commit?: boolean }): void;
+  sendAudio(audio: ArrayBuffer | string, options: { commit?: boolean, isBase64?: boolean }): void;
 
   /**
    * Sends an updated session configuration to the model. Used to update for example the model instructions during a handoff

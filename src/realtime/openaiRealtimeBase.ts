@@ -887,11 +887,11 @@ export abstract class OpenAIRealtimeBase
    */
   sendAudio(
     audio: ArrayBuffer,
-    { commit = false }: { commit?: boolean } = {},
+    { commit = false, isBase64 = false }: { commit?: boolean, isBase64?: boolean } = {},
   ): void {
     this.sendEvent({
       type: 'input_audio_buffer.append',
-      audio: arrayBufferToBase64(audio),
+      audio: isBase64 ? audio : arrayBufferToBase64(audio),
     });
 
     if (commit) {

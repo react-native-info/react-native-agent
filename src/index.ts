@@ -13,4 +13,4 @@ export type {
   ApplyPatchTool,
 } from './core';
 
-export * as realtime from './realtime';
+export * from './realtime';

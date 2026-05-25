@@ -438,7 +438,7 @@ export class OpenAIRealtimeWebSocket
    * @param audio - The audio buffer to send.
    * @param options - The options for the audio buffer.
    */
-  sendAudio(audio: ArrayBuffer, options: { commit?: boolean } = {}) {
+  sendAudio(audio: ArrayBuffer, options: { commit?: boolean, isBase64?: boolean } = {}) {
     if (this.#state.status === 'connected') {
       super.sendAudio(audio, options);
     }

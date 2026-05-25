@@ -72,7 +72,7 @@ export class OpenAIRealtimeSIP extends OpenAIRealtimeWebSocket {
 
   override sendAudio(
     _audio: ArrayBuffer,
-    _options: { commit?: boolean } = {},
+    _options: { commit?: boolean, isBase64?: boolean } = {},
   ): never {
     // SIP integrations stream audio to OpenAI directly through the telephony provider, so the
     // transport deliberately prevents userland code from sending duplicate buffers.

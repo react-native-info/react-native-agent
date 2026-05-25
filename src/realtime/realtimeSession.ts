@@ -1116,8 +1116,9 @@ export class RealtimeSession<
    * @param audio - The audio to send.
    * @param options - Additional options.
    * @param options.commit - Whether to finish the turn with this audio.
+   * @param options.isBase64 - Whether the audio is Base64 encoded
    */
-  sendAudio(audio: ArrayBuffer, options: { commit?: boolean } = {}) {
+  sendAudio(audio: ArrayBuffer | string, options: { commit?: boolean, isBase64?: boolean } = {}) {
     this.#transport.sendAudio(audio, options);
   }
 
