@@ -4,13 +4,13 @@ React Native Agent is a React Native port of the OpenAI Agents SDK for building 
 
 Built with ❤️ by [reactnative.info](https://reactnative.info)
 
-<img src="./road-map.jpg" alt="React Native Agent Road Map" style="max-height: 803px;">
+<img src="./road-map.png" alt="React Native Agent Road Map" style="max-height: 803px;">
 
 > [!NOTE]
-> Check out the [OpenAI Agents SDK)](https://github.com/openai/openai-agents-js).
+> Check out the [OpenAI Agents SDK](https://github.com/openai/openai-agents-js).
 
 > [!NOTE]
-> Wondering how the SDK works in action? Check out: [NewsFeed](https://play.google.com/store/apps/details?id=dev.newsfeed).
+> Curious how the SDK works in action? Check out: [NewsFeed](https://play.google.com/store/apps/details?id=dev.newsfeed).
 
 <img src="https://raw.githubusercontent.com/react-native-info/react-native-agent/main/qr-code.png" alt="NewsFeed" width="200"/>
 
@@ -72,6 +72,14 @@ poly();
 
     console.log(result.finalOutput);
 ```
+
+### Run your first realtime agent
+
+TODO
+
+> [!NOTE]
+> You must manually call `session.transport.requestResponse()` after `session.sendAudio()` to start the transaction.
+
 
 ## Acknowledgements
 

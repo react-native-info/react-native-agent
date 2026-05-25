@@ -12,3 +12,5 @@ export type {
   ShellTool,
   ApplyPatchTool,
 } from './core';
+
+export * from './realtime';
