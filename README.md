@@ -73,6 +73,14 @@ poly();
     console.log(result.finalOutput);
 ```
 
+### Run your first realtime agent
+
+TODO
+
+> [!NOTE]
+> You must manually call `session.transport.requestResponse()` after `session.sendAudio()` to start the transaction.
+
+
 ## Acknowledgements
 
 We'd like to acknowledge the excellent work of the open-source community, especially:
