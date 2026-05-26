@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Agent, Runner, setTracingDisabled, tool, OpenAIProvider, setDefaultOpenAIClient, setOpenAIAPI } from 'react-native-agent';
 import { OpenAI } from 'openai';
 import z from 'zod';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 function App() {
@@ -54,14 +55,16 @@ function App() {
   }, [])
 
   return (
-    <View style={{
-      backgroundColor: 'blue',
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-      <Text style={{ color: 'white', flex: 1 }}>{result}</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={{
+        backgroundColor: 'blue',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        <Text style={{ color: 'white', flex: 1 }}>{result}</Text>
+      </View>
+    </SafeAreaView>
   );
 }
 

@@ -25,7 +25,7 @@ Built with ❤️ by [reactnative.info](https://reactnative.info)
 1. [**Tracing**](https://openai.github.io/openai-agents-js/guides/tracing/): [Under work] Built-in tracking of agent runs, allowing you to view, debug and optimize your workflows
 1. [**Realtime Agents**](https://openai.github.io/openai-agents-js/guides/voice-agents/quickstart/): [Under work] Build powerful voice agents with full features
 
-Explore the [`examples/basic`](./examples/basic) directory to see the SDK in action.
+Explore the [`examples/basic`](./examples/) directory to see the SDK in action.
 
 ## Get started
 
@@ -75,7 +75,30 @@ poly();
 
 ### Run your first realtime agent
 
-TODO
+```js
+    const agent = new RealtimeAgent({
+      name: 'Assistant',
+      instructions: 'Greet the user with cheer and answer questions.',
+    });
+    const session = new RealtimeSession(agent, {
+      model: 'gpt-realtime-2',
+      config: {
+        outputModalities: ['audio'],
+        inputAudioFormat: 'pcm16',
+        outputAudioFormat: 'pcm16',
+        turnDetection: { type: 'server_vad' },
+      },
+    });
+
+    session.on('audio', async (event: any) => {
+      pushChunk(event.data);
+    })
+
+    await session.connect({ apiKey: API_KEY });
+
+    session.sendAudio(weatherBase64, { commit: true, isBase64: true });
+    session.transport.requestResponse?.();
+```
 
 > [!NOTE]
 > You must manually call `session.transport.requestResponse()` after `session.sendAudio()` to start the transaction.
