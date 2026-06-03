@@ -25,7 +25,7 @@ Built with ❤️ by [reactnative.info](https://reactnative.info)
 1. [**Tracing**](https://openai.github.io/openai-agents-js/guides/tracing/): [Under work] Built-in tracking of agent runs, allowing you to view, debug and optimize your workflows
 1. [**Realtime Agents**](https://openai.github.io/openai-agents-js/guides/voice-agents/quickstart/): [Under work] Build powerful voice agents with full features
 
-Explore the [`examples/basic`](./examples/) directory to see the SDK in action.
+Explore the [`examples/`](./examples/) directory to see the SDK in action.
 
 ## Get started
 
